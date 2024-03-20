@@ -8,7 +8,8 @@ terraform {
   backend "s3" {
     bucket = "terraform-amazon-demo-backend" # change to name of your bucket
     region = "ap-southeast-2"     # change to your region
-    key    = "terraform.tfstate"
+    key    = "terraform-production.tfstate"
+    encrypt = true
   }
 }
 

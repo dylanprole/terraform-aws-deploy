@@ -1,5 +1,5 @@
 variable "aws_region" {
-  description = "The region where resources will be deployed."
+  type    = string
   default     = "ap-southeast-2"
 }
 variable "aws_s3_bucket" {
